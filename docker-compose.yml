@@ -15,13 +15,13 @@ services:
     networks:
       - backend
     environment:
-      MYSQL_USER: springstudnet
-      MYSQL_PASSWORD: springstudnet
+#      MYSQL_USER: springstudnet
+#      MYSQL_PASSWORD: springstudnet
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: your_database_name # should this be here??
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "springstudnet", "-pspringstudnet"]
-      interval: 30s
+      interval: 5s
       timeout: 10s
       retries: 5
 #      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]

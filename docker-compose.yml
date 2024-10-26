@@ -15,8 +15,6 @@ services:
     networks:
       - backend
     environment:
-#      MYSQL_USER: springstudent
-#      MYSQL_PASSWORD: springstudent
       MYSQL_ROOT_PASSWORD: root
     command:
       - --mysql-native-password=ON

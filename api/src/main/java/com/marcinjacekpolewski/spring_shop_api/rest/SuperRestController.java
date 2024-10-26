@@ -42,8 +42,8 @@ public class SuperRestController {
     @PostMapping("/books")
     public void addBook(@RequestBody Book book)
     {
-        book.setId(0);
-        bookDAO.addEntry(book);
+        System.out.println("dudududu");
+        bookDAO.addEntry(new Book("book3"));
     }
 
 

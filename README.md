@@ -15,5 +15,5 @@ How to access server from other outside networks:
 3. in computer's terminal use command "curl ifconfig.me" which will return public ip 
 4. now server is available outside of local network 
 
-for instace use, inside web browser type: 
+for instance paste link into web browser: 
 http://1.1.1.1:8080/api/books , where 1.1.1.1 is previously found public ip
